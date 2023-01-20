@@ -5,12 +5,12 @@
 This project was created after lerning "Bootstrap"
 I have made it like my resume
 
-<h3><a>Operations:</a></h3>
-
 <h3><a>Opening: </a></h3>
 
-```mylilla.github.io/simple-site/```
+link: mylilla.github.io/simple-site/
 
-<h3 ><a>Additionally:</a></h3>
+<h3><a>Technologies in the project</a></h3>
 
-<h3 ><a>Description of project:</a></h3>
+- HTML
+- Bootstrap
+- CSS
