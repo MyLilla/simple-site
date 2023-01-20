@@ -11,32 +11,33 @@ background: url(../img/header.png), -moz-linear-gradient(left, var(--color1) 0%,
 background: url(../img/header.png), -webkit-linear-gradient(left, var(--color1) 0%,var(--color2) 100%);
 background: url(../img/header.png), linear-gradient(to right, var(--color1) 0%,var(--color2) 100%);
 filter: url(../img/header.png), progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
-background-size: cover  /*масштаб*/
+background-size: cover 
 }
 .itd_play {
     background-color: var(--color1);
     width: 60px;
     height: 60px;
-    border-radius: 50%;  /*круглые углы*/
+    border-radius: 50%;  
     display: flex;
-    justify-content: center;   /*3 для выравнивания*/
+    justify-content: center;   
     align-content: center;
     cursor: pointer;
-    margin : 30px auto;  /* в центре*/
-    transition: all 0.2s ease;  /*плавность при наведении*/
+    margin : 30px auto;  
+    transition: all 0.2s ease;  
 }
-.itd_play:hover { /*при наведении на элемент*/
-background-color: var(--color2);  /*фон меняется*/
+.itd_play:hover { 
+background-color: var(--color2);  
 }
 .itd_triangle {
-    margin: auto;  /* в центре*/
+    margin: auto;  
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 10px 0 10px 20px;  /*треугольник*/
+    border-width: 10px 0 10px 20px;  
     border-color: transparent transparent transparent var(--bs-white);
 }
-.btn-itd {  /* кнопка заказать*/
+
+.btn-itd {  
     display: block;
     max-width: 200px;
     margin: 0 auto;
@@ -49,39 +50,39 @@ background-color: var(--color2);  /*фон меняется*/
     background-color: var(--color1);
 }
 
-/*о курсе*/
+/*background*/
 .skills, .author {
     background-color: #eee;
 }
-.about i { /*для иконок*/
+/*for icons*/
+.about i {
     font-size: 25px;
     color: var(--color2);
 }
-.itd_cicrle { /*круг с иконкой*/
+.itd_cicrle { 
     margin: 0 auto 15px;
     width: 70px;
     height: 70px;
     border: 3px solid var(--color2);
     border-radius: 50%;
     display: flex;
-    justify-content: center; /*по горизонтали*/
-    align-items: center;  /*по вертикали относительно круга*/
+    justify-content: center; 
+    align-items: center;  
 }
 .line {
     width: 100px;
     height: 3px;
     background-color: var(--color1);
-    margin: 30px auto; /*отстур сверху - 30 по центру auto*/
+    margin: 30px auto; 
 }
 
-/*Выбор курса*/
 .projects h5 {
     padding: 30px;
     border: 3px solid var(--color1);
 }
-/*Программа курса*/
+
 .accordion-button:not(.collapsed){
-/*можно найти элемент f12 и тут его переопределить*/
+
     color: var(--bs-white);
     background-color: var(--color2);
 }
@@ -89,13 +90,12 @@ background-color: var(--color2);  /*фон меняется*/
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-/*Процесс обучения*/
 .lerning h5 {
     padding: 25px;
     border: 3px solid var(--color1);
 }
 
-/*Об авторе*/
+
 .autor {
     padding-bottom: 0;
 }
@@ -103,8 +103,8 @@ background-color: var(--color2);  /*фон меняется*/
     max-width: 260px;
 }
 
-/*Цвета*/
-.color1 {  /* чтобы пользоваться несколько раз в html */
+/*Colors*/
+.color1 {  
     color: var(--color1);
 }
 .color2 {
@@ -116,6 +116,3 @@ background-color: var(--color2);  /*фон меняется*/
 .bg2 {
     background-color: var(--color2);
 }
-
-
-
