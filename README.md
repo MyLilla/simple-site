@@ -7,7 +7,7 @@ I have made it like my resume
 
 <h3><a>Opening: </a></h3>
 
-link: mylilla.github.io/simple-site/
+link: https://mylilla.github.io/simple-site/
 
 <h3><a>Technologies in the project</a></h3>
 
