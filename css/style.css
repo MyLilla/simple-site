@@ -1,43 +1,37 @@
 :root {
-    --color1: #d1cfa1; 
-    --color2: #5e6d01;
-}
-header, footer, section {
-    padding: 70px 0;
-}
-header, footer {
-    background: var(--color1);
-background: url(../img/header.png), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
-background: url(../img/header.png), -webkit-linear-gradient(left, var(--color1) 0%,var(--color2) 100%);
-background: url(../img/header.png), linear-gradient(to right, var(--color1) 0%,var(--color2) 100%);
-filter: url(../img/header.png), progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
-background-size: cover 
-}
-.itd_play {
-    background-color: var(--color1);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;  
-    display: flex;
-    justify-content: center;   
-    align-content: center;
-    cursor: pointer;
-    margin : 30px auto;  
-    transition: all 0.2s ease;  
-}
-.itd_play:hover { 
-background-color: var(--color2);  
-}
-.itd_triangle {
-    margin: auto;  
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 0 10px 20px;  
-    border-color: transparent transparent transparent var(--bs-white);
+    --color1: #5e9db1;
+    --color2: #8c7aa3;
 }
 
-.btn-itd {  
+footer,
+section {
+    padding: 50px;
+}
+
+
+header,
+footer {
+    background: var(--color1);
+    background: url(../img/header.jpg), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url(../img/header.jpg), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url(../img/header.jpg), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+    filter: url(../img/header.jpg), progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+    background-size: cover
+}
+
+header {
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+body {
+    margin-top: 120px;
+}
+
+.btn-itd {
     display: block;
     max-width: 200px;
     margin: 0 auto;
@@ -45,48 +39,61 @@ background-color: var(--color2);
     color: var(--bs-white);
     background-color: var(--color2);
 }
-.btn-itd:hover{
+
+.btn-itd:hover {
     color: var(--bs-white);
     background-color: var(--color1);
 }
 
+#toTop {
+
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+}
+
 /*background*/
-.skills, .author {
+.projects,
+.contacts {
     background-color: #eee;
 }
+
 /*for icons*/
-.about i {
+i {
     font-size: 25px;
-    color: var(--color2);
+    color: var(--color1);
 }
-.itd_cicrle { 
+
+.itd_cicrle {
     margin: 0 auto 15px;
     width: 70px;
     height: 70px;
     border: 3px solid var(--color2);
     border-radius: 50%;
     display: flex;
-    justify-content: center; 
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
 }
+
 .line {
     width: 100px;
     height: 3px;
     background-color: var(--color1);
-    margin: 30px auto; 
+    margin: 30px auto;
 }
 
-.projects h5 {
+#frame {
     padding: 30px;
     border: 3px solid var(--color1);
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
 
     color: var(--bs-white);
     background-color: var(--color2);
 }
-.accordion-button:not(.collapsed)::after{
+
+.accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
@@ -96,23 +103,50 @@ background-color: var(--color2);
 }
 
 
-.autor {
-    padding-bottom: 0;
-}
 .itd_photo {
-    max-width: 260px;
+    max-width: 200px;
 }
 
 /*Colors*/
-.color1 {  
+.color1 {
     color: var(--color1);
 }
+
 .color2 {
     color: var(--color2);
 }
+
 .bg1 {
     background-color: var(--color1);
 }
+
 .bg2 {
     background-color: var(--color2);
+}
+
+/*triangle*/
+.itd_play {
+    background-color: var(--color1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    margin: 30px auto;
+    transition: all 0.2s ease;
+}
+
+.itd_play:hover {
+    background-color: var(--color2);
+}
+
+.itd_triangle {
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent var(--bs-white);
 }
